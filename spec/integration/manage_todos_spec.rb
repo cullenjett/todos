@@ -20,9 +20,7 @@ feature "Manage todos" do
   scenario "mark todos as complete" do
     sign_in
     create_todo_with_description("Buy some milk")
-
     complete_todo("Buy some milk")
-
     user_sees_completed_todo_item("Buy some milk")
   end
 
