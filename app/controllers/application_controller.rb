@@ -10,6 +10,6 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    OpenStruct.new(email: session[:current_email])
+    OpenStruct.new(email: session[:current_email], todos: Todo.all)
   end
 end
