@@ -1,2 +1,8 @@
 <h1>Todos</h1>
 <p data-role='description'> This is an app to manage todos</p>
+
+<%= form_for :session, url: session_path do |f| %>
+  <%= f.label :email_address %>
+  <%= f.text_field :email_address %>
+  <%= f.submit "Sign In" %>
+<% end %>
